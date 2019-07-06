@@ -1,3 +1,6 @@
+## About 
+This project is created following a tutorial series by John Smilga. I'm following this tutorial in order to get a better understanding for react's context api and react router.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
