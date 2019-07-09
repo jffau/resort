@@ -3,7 +3,7 @@ import { RoomContext } from '../context';
 import Title from './Title';
 import Room from './Room';
 import Loading from './Loading';
-import Rooms from '../pages/Rooms';
+
 export default class FeaturedRooms extends Component {
   /*
   This subscribes the component to RoomContext, 
