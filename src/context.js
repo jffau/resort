@@ -23,8 +23,8 @@ class RoomProvider extends Component {
   // getting local data:
   componentDidMount() {
     let rooms = this.formatData(items);
-    console.log(rooms);
-    this.setState({ rooms, loading: false });
+    let featuredRooms = rooms.filter(room => room.featured === true);
+    this.setState({ rooms, featuredRooms, sortedRooms: rooms, loading: false });
   }
 
   render() {
