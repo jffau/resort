@@ -5,7 +5,7 @@ const Loading = () => {
   return (
     <div className="loading">
       <h4>Rooms are loading...</h4>
-      <img src={loadingGif} />
+      <img src={loadingGif} alt="Loading" />
     </div>
   );
 };
