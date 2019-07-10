@@ -3,17 +3,18 @@ import RoomsFilter from './RoomsFilter';
 import RoomsList from './RoomsList';
 import { withRoomConsumer } from '../context';
 import Loading from './Loading';
+
+// using higher order components to access context
 const RoomContainer = ({ context }) => {
   const { loading, sortedRooms, rooms } = context;
   if (loading) {
     return <Loading />;
   }
   return (
-    <div>
-      RoomsContainer
+    <>
       <RoomsFilter rooms={rooms} />
       <RoomsList rooms={sortedRooms} />
-    </div>
+    </>
   );
 };
 

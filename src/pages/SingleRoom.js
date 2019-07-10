@@ -20,7 +20,6 @@ export default class SingleRoom extends Component {
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
-    console.log(room);
     if (!room) {
       return (
         <Hero>
