@@ -6,11 +6,13 @@ import Rooms from './pages/Rooms';
 import SingleRoom from './pages/SingleRoom';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/rooms" exact component={Rooms} />
